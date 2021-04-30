@@ -118,7 +118,6 @@ function RenderComments({ comments }) {
                             </div>
                         );
                     })
-
                     }
                     <CommentForm />
 
@@ -151,6 +150,5 @@ function CampsiteInfo(props) {
     }
     return <div />;
 }
-
 
 export default CampsiteInfo;
