@@ -90,8 +90,8 @@ function RenderPartner({ partner }) {
 }
 
 function PartnerList(props) {
-
-    const partners = props.partners.map(partner => {
+    console.log(props)
+    const partners = props.partners.partners.map(partner => {
 
         return (
             <Media tag="li" key={partner.id}>
@@ -100,12 +100,12 @@ function PartnerList(props) {
         );
     });
 
-    if (props.isLoading) {
+    if (props.partners.isLoading) {
         return (
             <Loading />
         );
     }
-    if (props.errMess) {
+    if (props.partners.errMess) {
         return (
             <div className="col">
                 <h4>{props.errMess}</h4>
